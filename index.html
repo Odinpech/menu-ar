@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visor 3D Menú</title>
-    <!-- Importa la librería universal de Google para visualización 3D -->
+    <!-- Script Oficial de Google Model Viewer Corregido -->
     <script type="module" src="https://googleapis.com"></script>
     <style>
-        body { margin: 0; background-color: #f3f4f6; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; }
-        model-viewer { width: 100%; height: 90vh; --ar-button-display: block; }
+        body { margin: 0; background-color: #ffffff; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        model-viewer { width: 100vw; height: 100vh; }
     </style>
 </head>
 <body>
 
-    <!-- El componente inteligente: Muestra el plato en 3D y decide si activar la cámara AR según el móvil -->
-    <model-viewer src="charolas kit.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" alt="Plato 3D para Restaurante">
+    <!-- REEMPLAZA "tu_plato_optimizado.glb" POR EL NOMBRE EXACTO DE TU ARCHIVO EN GITHUB -->
+    <model-viewer src="charolas kit.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1">
     </model-viewer>
 
 </body>
