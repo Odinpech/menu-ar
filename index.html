@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor 3D Menú</title>
+    <!-- Importa la librería universal de Google para visualización 3D -->
+    <script type="module" src="https://googleapis.com"></script>
+    <style>
+        body { margin: 0; background-color: #f3f4f6; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; }
+        model-viewer { width: 100%; height: 90vh; --ar-button-display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- El componente inteligente: Muestra el plato en 3D y decide si activar la cámara AR según el móvil -->
+    <model-viewer src="TU_ARCHIVO.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" alt="Plato 3D para Restaurante">
+    </model-viewer>
+
+</body>
+</html>
